@@ -5,31 +5,31 @@
    Fonts: DM Serif Display + DM Sans
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
 
 :root {
-  --navy:        #0f1f38;
-  --navy-mid:    #1a3057;
-  --navy-light:  #243f6b;
-  --amber:       #f59e0b;
-  --amber-light: #fcd34d;
+  --navy:        #001f5b;
+  --navy-mid:    #003595;
+  --navy-light:  #1a4db0;
+  --amber:       #c4a862;
+  --amber-light: #d0b787;
   --white:       #ffffff;
-  --off-white:   #f8f7f4;
-  --gray-light:  #e8e6e1;
-  --gray-mid:    #9ca3af;
-  --gray-dark:   #4b5563;
-  --text:        #1a1a2e;
-  --text-light:  #4b5563;
-  --green:       #059669;
-  --red:         #dc2626;
+  --off-white:   #f7f6f2;
+  --gray-light:  #e5e2d9;
+  --gray-mid:    #9a9488;
+  --gray-dark:   #4a4640;
+  --text:        #1a1714;
+  --text-light:  #4a4640;
+  --green:       #1a6b45;
+  --red:         #ce0e2d;
 
-  --font-display: 'DM Serif Display', Georgia, serif;
-  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Source Sans 3', system-ui, sans-serif;
 
   --max-w:   1100px;
   --radius:  6px;
-  --shadow:  0 2px 12px rgba(15,31,56,0.10);
-  --shadow-lg: 0 8px 32px rgba(15,31,56,0.16);
+  --shadow:  0 2px 12px rgba(0,31,91,0.10);
+  --shadow-lg: 0 8px 32px rgba(0,31,91,0.18);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
