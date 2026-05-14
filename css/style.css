@@ -134,7 +134,7 @@ strong { color: var(--text); font-weight: 600; }
   display: grid;
   grid-template-columns: 1fr 380px;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
 }
 .hero__eyebrow {
   display: inline-block;
@@ -170,7 +170,7 @@ strong { color: var(--text); font-weight: 600; }
 .form-card {
   background: var(--white);
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: var(--shadow-lg);
 }
 .form-card__title {
