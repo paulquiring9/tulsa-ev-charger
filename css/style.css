@@ -116,7 +116,7 @@ strong { color: var(--text); font-weight: 600; }
 /* ---- HERO ---- */
 .hero {
   background: var(--navy);
-  padding: 5rem 1.5rem 4rem;
+  padding: 2.5rem 1.5rem 3rem;
   position: relative;
   overflow: hidden;
 }
@@ -500,7 +500,7 @@ td strong { color: var(--navy); }
   gap: 3rem;
   margin-bottom: 2.5rem;
 }
-.footer__brand p { font-size: 0.88rem; margin-top: 0.75rem; line-height: 1.6; }
+.footer__brand p { font-size: 0.88rem; margin-top: 0.75rem; line-height: 1.6; color: rgba(255,255,255,0.75); }
 .footer__logo { font-family: var(--font-display); font-size: 1.1rem; color: white; }
 .footer__logo span { color: var(--amber); }
 .footer__col h4 { color: white; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; font-family: var(--font-body); margin-bottom: 1rem; }
