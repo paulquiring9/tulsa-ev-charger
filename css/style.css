@@ -1,8 +1,8 @@
 /* ============================================
    TULSA EV CHARGER INSTALLATION
    Design: Clean utilitarian — trust-first
-   Palette: Deep navy + electric amber accent
-   Fonts: DM Serif Display + DM Sans
+   Palette: TU Royal Blue + Muted Old Gold + Charcoal
+   Fonts: Playfair Display + Source Sans 3
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
@@ -116,7 +116,7 @@ strong { color: var(--text); font-weight: 600; }
 /* ---- HERO ---- */
 .hero {
   background: var(--navy);
-  padding: 2.5rem 1.5rem 3rem;
+  padding: 5rem 1.5rem 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -134,7 +134,7 @@ strong { color: var(--text); font-weight: 600; }
   display: grid;
   grid-template-columns: 1fr 380px;
   gap: 4rem;
-  align-items: start;
+  align-items: center;
 }
 .hero__eyebrow {
   display: inline-block;
@@ -170,7 +170,7 @@ strong { color: var(--text); font-weight: 600; }
 .form-card {
   background: var(--white);
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 2rem;
   box-shadow: var(--shadow-lg);
 }
 .form-card__title {
@@ -500,7 +500,7 @@ td strong { color: var(--navy); }
   gap: 3rem;
   margin-bottom: 2.5rem;
 }
-.footer__brand p { font-size: 0.88rem; margin-top: 0.75rem; line-height: 1.6; color: rgba(255,255,255,0.75); }
+.footer__brand p { font-size: 0.88rem; margin-top: 0.75rem; line-height: 1.6; }
 .footer__logo { font-family: var(--font-display); font-size: 1.1rem; color: white; }
 .footer__logo span { color: var(--amber); }
 .footer__col h4 { color: white; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; font-family: var(--font-body); margin-bottom: 1rem; }
