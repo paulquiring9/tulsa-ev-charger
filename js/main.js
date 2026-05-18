@@ -10,38 +10,36 @@ document.querySelectorAll('.faq-question').forEach(btn => {
 
 // Mobile nav toggle
 const toggle = document.querySelector('.nav__toggle');
-const links  = document.querySelector('.nav__links');
+const links = document.querySelector('.nav__links');
 if (toggle && links) {
-  toggle.addEventListener('click', () => {
-    const open = links.style.display === 'flex';
-    links.style.display = open ? 'none' : 'flex';
-    links.style.flexDirection = 'column';
-    links.style.position = 'absolute';
-    links.style.top = '64px';
-    links.style.left = '0';
-    links.style.right = '0';
-    links.style.background = '#0f1f38';
-    links.style.padding = '1rem 1.5rem 1.5rem';
-    links.style.gap = '1rem';
-    links.style.zIndex = '99';
-  });
+  toggle.addEventListener('click', () => links.classList.toggle('nav--open'));
 }
 
-// Form submission (replace with real handler / webhook)
+// Formspree async form submission
 const form = document.getElementById('lead-form');
 if (form) {
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async function(e) {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending…';
+    const original = btn.textContent;
+    btn.textContent = 'Sending...';
     btn.disabled = true;
-    setTimeout(() => {
-      form.innerHTML = `
-        <div style="text-align:center;padding:2rem 0">
-          <div style="font-size:2.5rem;margin-bottom:1rem">✅</div>
-          <h3 style="font-family:'DM Serif Display',serif;color:#0f1f38;margin-bottom:0.5rem">Got it — thank you!</h3>
-          <p style="color:#4b5563;font-size:0.95rem">A licensed Tulsa installer will reach out within one business day.</p>
-        </div>`;
-    }, 800);
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        form.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      } else {
+        btn.textContent = 'Something went wrong — try again';
+        btn.disabled = false;
+      }
+    } catch(err) {
+      btn.textContent = 'Something went wrong — try again';
+      btn.disabled = false;
+    }
   });
 }

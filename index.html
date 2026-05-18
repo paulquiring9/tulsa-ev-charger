@@ -98,7 +98,7 @@
     <div class="form-card" id="contact">
       <div class="form-card__title">Get a Free Quote</div>
       <p class="form-card__sub">We'll match you with a licensed Tulsa installer — usually within one business day.</p>
-      <form id="lead-form">
+      <form id="lead-form" action="https://formspree.io/f/mnjrnqnl" method="POST">
         <div class="form-group">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" placeholder="Jane Smith" required />
@@ -108,7 +108,10 @@
           <input type="tel" id="phone" name="phone" placeholder="(918) 555-0100" required />
         </div>
         <div class="form-group">
-          <label for="zip">Zip Code</label>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@email.com" />
+        </div>
+Zip Code</label>
           <input type="text" id="zip" name="zip" placeholder="74101" maxlength="5" required />
         </div>
         <div class="form-group">
@@ -123,6 +126,9 @@
         </div>
         <button type="submit" class="btn btn--primary">Get My Free Quote →</button>
         <p class="form-card__disclaimer">No spam. No obligation. Local installers only.</p>
+            <div id="form-success" style="display:none;background:#e8f5e9;border-left:3px solid #2a6a2a;padding:1.2rem;border-radius:6px;margin-top:1rem;font-size:0.95rem;color:#1a3a1a;line-height:1.5;">
+        <strong>You're all set.</strong> We'll match you with a licensed local installer within one business day. Check your phone — they'll reach out directly.
+      </div>
       </form>
     </div>
   </div>
