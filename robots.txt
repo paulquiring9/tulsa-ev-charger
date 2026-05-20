@@ -16,4 +16,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://tulsaevchargerinstallation.com/sitemap.xml
+Sitemap: https://tulsaevcharger.com/sitemap.xml
