@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/paulq/OneDrive/Desktop/knoxville-ev-site/**)",
+      "Bash(dir \"C:\\\\Users\\\\paulq\\\\OneDrive\\\\Desktop\\\\knoxville-ev-site\")"
+    ]
+  }
+}
